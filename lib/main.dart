@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:english_words/english_words.dart';
+import 'package:assets_audio_player/assets_audio_player.dart';
 
-void main() => runApp(const MusicApp());
+void main() => runApp(MusicApp());
 
 class MusicApp extends StatelessWidget {
-  const MusicApp({super.key});
+  MusicApp({super.key});
+
+  final audioPlayer = AssetsAudioPlayer();
 
   @override
   Widget build(BuildContext context) {
