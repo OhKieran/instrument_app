@@ -14,7 +14,18 @@ class MusicApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: SafeArea(
-          child: Container(),
+          child: Column(
+            children: [
+              Center(
+                child: TextButton(
+                  child: const Text('Note 1'),
+                  onPressed: () {
+                    audioPlayer.open(Audio('assets/note1.wav'));
+                  },
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
