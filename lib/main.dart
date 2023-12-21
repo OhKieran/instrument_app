@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:assets_audio_player/assets_audio_player.dart';
 
-void main() => runApp(MusicApp());
+void main() {
+  runApp(const MusicApp());
+}
 
 class MusicApp extends StatelessWidget {
-  MusicApp({super.key});
-
-  final audioPlayer = AssetsAudioPlayer();
+  const MusicApp({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final audioPlayer = AssetsAudioPlayer();
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
